@@ -48,6 +48,7 @@ class Solution:
         for i in range(len(cost_arr) -3, -1, -1):
             cost_arr[i] += min(cost_arr[i+1], cost_arr[i+2])
 
+
             return min(cost_arr[0], cost_arr[1])
 
 
@@ -56,6 +57,7 @@ class Solution:
         :param cost_arr: The integer array cost, where cost[i] is the cost of the i-th step on a staircase.
         :return: Minimum cost to reach the top.
         """
+        # [4, 1, 8] -> 0; the top of the staircase here is th 0 outside the array
 
         # Dict/hash map to store the min cost for each step
         memo ={}
@@ -80,7 +82,15 @@ class Solution:
         memo[len(cost_arr)] = min(self.min_cost_climbing_stairs_memoization(cost_arr[:-1]) + cost_arr[-1],
                                   self.min_cost_climbing_stairs_memoization(cost_arr[:-2]) + cost_arr[-2])
 
+        if len(cost_arr) == 2:
+            memo[len(cost_arr)] = min(cost_arr[0], cost_arr[1])
+            return memo[len(cost_arr)]
+
+        memo[len(cost_arr)] = min(self.min_cost_climbing_stairs_memoization(cost_arr[:-1]))
+
         return memo[len(cost_arr)]
+
+
 
         
 
