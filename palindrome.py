@@ -1,3 +1,6 @@
+from email.utils import parsedate_to_datetime
+
+
 class Solution:
 
     def string_palindrome(self, s: str) -> bool:
@@ -37,7 +40,7 @@ class Solution:
 
         return longest
 
-    def count_substrings(self, s: str) -> int:
+    def count_total_palindrome_substrings(self, s: str) -> int:
         if len(s) == 0:
             return 0
 
@@ -57,5 +60,33 @@ class Solution:
             total_palindrome += count_palindrome_from_center(i, i+1)
 
         return total_palindrome
+
+
+    def break_palindrome(self, palindrome_string):
+
+        if len(palindrome_string) == 1:
+            return 'IMPOSSIBLE'
+
+        # Convert the string to a list to allow modification
+        chars = list(palindrome_string)
+        size = len(chars)
+
+        # Try to make the smallest possible change in the first half
+        for i in range(size//2):
+            if chars[i] != 'a':
+                chars[i] = 'a'
+                return ''.join(chars)
+
+        # if all characters in the first half are 'a', change the last character to 'b'
+        # in lexicography, the leftmost char have the greater weight,
+        # so to minimize the lexicographical number
+        # we change numbers on the leftmost part to the smallest value 'a'.
+        # to increase the lexicographical number, we add a small value 'b' to the rightmost part
+        chars[-1] = 'b'
+        return ''.join(chars)
+
+
+
+
 
 

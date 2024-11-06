@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bc8be67-7cd0-4b35-bf20-899dfb0ce861" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/gcd_strings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/merge_string_alt.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/two_sum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Leetcode-Python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Leetcode-Python.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/palindrome.py" beforeDir="false" afterPath="$PROJECT_DIR$/palindrome.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
