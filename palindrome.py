@@ -71,7 +71,7 @@ class Solution:
         chars = list(palindrome_string)
         size = len(chars)
 
-        # Try to make the smallest possible change in the first half
+        # Try to make a change to make the string as small as possible so start with the first half
         for i in range(size//2):
             if chars[i] != 'a':
                 chars[i] = 'a'

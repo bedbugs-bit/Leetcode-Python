@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bc8be67-7cd0-4b35-bf20-899dfb0ce861" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/can_place_flower.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reverse_vowels_string.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/palindrome.py" beforeDir="false" afterPath="$PROJECT_DIR$/palindrome.py" afterDir="false" />
     </list>
