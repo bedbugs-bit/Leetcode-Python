@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bc8be67-7cd0-4b35-bf20-899dfb0ce861" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/can_place_flower.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reverse_vowels_string.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/increasing_triplet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/merge_sort.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_except_self.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Leetcode-Python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Leetcode-Python.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/palindrome.py" beforeDir="false" afterPath="$PROJECT_DIR$/palindrome.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +27,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2oRrvCLJlr6EmYv06mYJeeTCHpY" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -37,7 +39,8 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/uzo/Desktop/SWE/Leetcode-Python"
+    "last_opened_file_path": "/Users/uzo/Desktop/SWE/Python/Leetcode-Python",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="SharedIndexes">
