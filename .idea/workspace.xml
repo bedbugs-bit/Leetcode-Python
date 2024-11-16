@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bc8be67-7cd0-4b35-bf20-899dfb0ce861" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/increasing_triplet.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/merge_sort.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product_except_self.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Leetcode-Python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Leetcode-Python.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="8bc8be67-7cd0-4b35-bf20-899dfb0ce861" name="Changes" comment="added code for increasing_triplet.py">
+      <change afterPath="$PROJECT_DIR$/bubble_sort.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/selection_sort.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,6 +56,15 @@
       <option name="presentableId" value="Default" />
       <updated>1730843458333</updated>
     </task>
+    <task id="LOCAL-00001" summary="added code for increasing_triplet.py">
+      <option name="closed" value="true" />
+      <created>1731689887352</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731689887352</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -71,5 +77,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added code for increasing_triplet.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="added code for increasing_triplet.py" />
   </component>
 </project>
