@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bc8be67-7cd0-4b35-bf20-899dfb0ce861" name="Changes" comment="Added logic for selection and bubble sort">
-      <change afterPath="$PROJECT_DIR$/move_zeros.py" afterDir="false" />
+    <list default="true" id="8bc8be67-7cd0-4b35-bf20-899dfb0ce861" name="Changes" comment="Added logic for move_zeros.py">
+      <change afterPath="$PROJECT_DIR$/social_media_recommendations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stable_segments.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +72,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731748819551</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added logic for move_zeros.py">
+      <option name="closed" value="true" />
+      <created>1731749746439</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1731749746439</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -88,6 +97,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added code for increasing_triplet.py" />
     <MESSAGE value="Added logic for selection and bubble sort" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added logic for selection and bubble sort" />
+    <MESSAGE value="Added logic for move_zeros.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added logic for move_zeros.py" />
   </component>
 </project>
