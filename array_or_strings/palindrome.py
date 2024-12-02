@@ -1,5 +1,4 @@
-from email.utils import parsedate_to_datetime
-
+from collections import defaultdict
 
 class Solution:
 
@@ -61,6 +60,31 @@ class Solution:
 
         return total_palindrome
 
+    def distinct_palindrome(self, s):
+        """
+        Solution:
+        - Use a set data structure to count distict palidromes
+        - Create a function to expand around the centre to take care of odd and even palindromes
+
+        """
+
+        def count_from_centre(left, right):
+            result = set()
+            while left >= 0 and right <= len(s) - 1 and s[left] == s[right]:
+                result.add(s[left:right + 1])
+                left -= 1
+                right += 1
+
+            return result
+
+        distinct_palindromes = set()
+
+        for i in range(len(s)):
+            distinct_palindromes.update(count_from_centre(i, i))
+            distinct_palindromes.update(count_from_centre(i, i + 1))
+
+        return len(distinct_palindromes)
+
 
     def break_palindrome(self, palindrome_string):
 
@@ -85,8 +109,39 @@ class Solution:
         chars[-1] = 'b'
         return ''.join(chars)
 
+    def getMaxOccurrences(self, components, minLength, maxLength, maxUnique):
+        """
 
+        Solution
 
+        - iterate at the starting index whilst expanding the substring to the maxLength
+        - added helper function to implement set data structure ensuring unique chars and a function to return a bool if a substring is valid
 
+        - time complexity of O(n), space complexity of O(n^2)
+        """
+        # Write your code here
+        substring_count = defaultdict(int)
+
+        def count_unique_chars(substring):
+            return len(set(substring))
+
+        def is_valid_substring(substring):
+            if len(substring) < minLength or len(substring) > maxLength:
+                return False
+            if count_unique_chars(substring) > maxUnique:
+                return False
+
+            return True
+
+        for i in range(len(components)):
+            substr = ""
+
+            for j in range(i, min(len(components), i + maxLength)):
+                substr += components[j]
+
+                if is_valid_substring(substr):
+                    substring_count[substr] += 1
+
+        return max(substring_count.values(), default=0)
 
 
