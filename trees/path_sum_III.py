@@ -1,5 +1,5 @@
 from collections import defaultdict
-from typing import Optional
+from typing import Optional, Dict
 
 
 # Definition for a binary tree node.
@@ -12,27 +12,37 @@ class TreeNode:
 
 class Solution:
     def pathSum(self, root: Optional[TreeNode], targetSum: int) -> int:
-        # prefix
-        sums = defaultdict(int)
-        sums[0] = 1
 
-        def dfs(root, total):
-            count = 0
-            if root:
-                total += root.val
-                # find if there exists a prefix sum in this path total = prefix + target, if prefix exists then there is a targetSum in this path
-                count = sums[total - targetSum]
+        # Initialize prefix sums with base case (sum = 0)
+        # We have seen a sum of zero once.
+        prefix_sums: Dict[int, int] = {0: 1}
 
-                # Add value of this prefix sum
-                sums[total] += 1
+        def dfs(node: Optional[TreeNode], current_sum: int) -> int:
+            if not node:
+                return 0
 
-                count += dfs(root.left, total) + dfs(root.right, total)
+            # Update the current path sum
+            current_sum += node.val
+            # Count paths with the required sum ending at this node
+            path_count = prefix_sums.get(current_sum - targetSum, 0)
 
-                # remove this value of prefix sum as it has been explored
-                sums[total] -= 1
-            return count
+            # Update the prefix sums with the current sum
+            prefix_sums[current_sum] = prefix_sums.get(current_sum, 0) + 1
+
+            # Recursively count paths in left and right subtrees
+            path_count += dfs(node.left, current_sum)
+            path_count += dfs(node.right, current_sum)
+
+            # Backtrack: remove the current sum from the prefix sums
+            prefix_sums[current_sum] -= 1
+            if prefix_sums[current_sum] == 0:
+                del prefix_sums[current_sum]
+
+            return path_count
+
 
         return dfs(root, 0)
+
 
     def pathSum2(self, root, targetSum):
         prefix_sum = defaultdict(int)
@@ -52,6 +62,7 @@ class Solution:
             count += dfs(node.right, curr_sum)
 
             prefix_sum[curr_sum] -= 1
+
 
             return count
 
