@@ -35,5 +35,15 @@ class Solution:
         dfs(root, False, 0)
 
         return self.max_zigzag
-            
+
+
+    def longestZigZag2(self, root: Optional[TreeNode]) -> int:
+        def helper(root, length, left):
+            if not root:
+                return length
+            length += 1
+            if left:
+                return max(helper(root.right, length, False), helper(root.left, 0, True))
+            return max(helper(root.left, length, True), helper(root.right, 0, False))
+        return helper(root, -1, False)
             
