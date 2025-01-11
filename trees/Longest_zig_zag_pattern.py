@@ -46,4 +46,21 @@ class Solution:
                 return max(helper(root.right, length, False), helper(root.left, 0, True))
             return max(helper(root.left, length, True), helper(root.right, 0, False))
         return helper(root, -1, False)
+
+    def longestZigZag3(self, root: Optional[TreeNode]) -> int:
+        ans = 0
+        # Meaning of l,r:
+        # l means the longest zigzag path with node as end point, moreover,
+        # node is the left child of its parent.
+        # Similarly, define r.
+        def dfs(node:TreeNode,l:int,r:int):
+            nonlocal ans
+            ans = max(ans,l)
+            ans = max(ans,r)
+            if node.left:
+                dfs(node.left,r+1,0)
+            if node.right:
+                dfs(node.right,0,l+1)
+        dfs(root,0,0)
+        return ans
             
