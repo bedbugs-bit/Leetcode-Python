@@ -27,3 +27,12 @@ class Solution:
 
         # Join the stack to form the final decoded string
         return ''.join(stack)
+        # Time complexity of O(n)
+        # Space complexity of O(n)
+
+
+
+
+
+
+

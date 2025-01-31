@@ -20,3 +20,6 @@ class Solution:
                 stack.append(asteroid)
 
         return stack
+        # time complexity of O(n)
+        # space complexity of 0(n)
+
