@@ -25,5 +25,7 @@ class Solution(object):
         if prev:
             prev.next = slow.next
 
+        # Space complexity of O(1), time complexity of O(n)
         return head
+
 

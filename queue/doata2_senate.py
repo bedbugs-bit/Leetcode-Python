@@ -1,5 +1,8 @@
 from collections import deque
 
+from setuptools.command.dist_info import dist_info
+
+
 class Solution:
     def predictPartyVictory(self, senate: str) -> str:
         n = len(senate)
@@ -24,7 +27,4 @@ class Solution:
                 d_queue.append(d_index + n)
 
         return "Radiant" if r_queue else "Dire"
-
-
-
 
