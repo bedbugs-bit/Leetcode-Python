@@ -6,6 +6,7 @@ class TreeNode:
 
 class Solution:
     def search(self, root, val: int):
+        # O(n) time complexity, 0(n) space complexity
         if not root:
             return None
 
@@ -16,4 +17,8 @@ class Solution:
             return self.search(root.left, val)
         else:
             return  self.search(root.right, val)
+
+
+
+
 
