@@ -40,4 +40,6 @@ class Solution:
             if course in prerequisite_dict and not dfs(course):
                 return False
 
+        # O(n) space complexity
+
         return True
