@@ -9,7 +9,7 @@ class Solution:
             for coin in coins:
                 if (target - coin) >= 0:
                     dp[target] = min(dp[target], dp[target-coin] + 1)
-
+        # O(n * coin) time, O(n) space
         return dp[amount] if dp[amount] != float('inf') else -1
 
 
