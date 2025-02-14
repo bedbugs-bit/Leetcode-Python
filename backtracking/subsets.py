@@ -13,5 +13,7 @@ class Solution:
 
         result = []
         backtrack(0, [])
+        # O((2^n) * n) the copy function add a 0(n) complexity
+        # O((2^n) * n) calls the recursive function before it returns
         return result
 
