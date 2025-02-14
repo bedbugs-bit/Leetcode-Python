@@ -15,5 +15,7 @@ class Solution:
         while fast and fast.next:
             slow = slow.next
             fast = fast.next.next
+
+        # O(n) time, O(1) space complexity
         return slow
 
