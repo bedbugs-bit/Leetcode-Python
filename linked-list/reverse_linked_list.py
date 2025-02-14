@@ -18,14 +18,18 @@ class Solution:
         # time complexity of O(n) space complexity of O(1)
         return prev
 
+
     # recursive solution
 
     def recursive_reverse_list(self, head: ListNode) -> ListNode:
+        # base case
         if not head or not head.next:
             return head
+
+        #
         reversed_head = self.recursive_reverse_list(head.next)
-        head.next.next = head
-        head.next = None
+        head.next.next = head # reverse thee pointer
+        head.next = None # break old connection
 
         return reversed_head
 
