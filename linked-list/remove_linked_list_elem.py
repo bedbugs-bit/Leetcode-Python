@@ -17,7 +17,7 @@ class Solution:
                 curr_node.next = curr_node.next.next
             else:
                 curr_node = curr_node.next
-
+        # O(n) time, 0(1) space
         return dummy_head.next
 
 
