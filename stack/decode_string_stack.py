@@ -1,3 +1,6 @@
+from inspect import stack
+
+
 class Solution:
     def decode_string(self, s: str) -> str:
         stack = []
@@ -29,6 +32,9 @@ class Solution:
         return ''.join(stack)
         # Time complexity of O(n)
         # Space complexity of O(n)
+
+
+
 
 
 
