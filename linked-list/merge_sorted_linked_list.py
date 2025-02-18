@@ -13,7 +13,7 @@ class Solution:
         while list1 and list2:
             if list1.val < list2.val:
                 curr.next = list1
-                list1, curr = list1.next, list1
+                list1, curr = list1.next, list1 # tuple unpacking, both assignments happen at the same time
             else:
                 curr.next = list2
                 list2, curr = list2.next, list2 # tuple unpacking, both assignments happen at the same time
