@@ -38,3 +38,24 @@ class Solution:
 
         return level
 
+    def maxDepth(self, root: Optional[TreeNode]) -> int:
+
+        if not root:
+            return 0  # No tree, depth is 0
+
+        q = deque([(root, 1)])  # Queue stores (node, current depth)
+
+        while q:
+            node, level = q.popleft()
+
+            # Add left and right children to queue if they exist
+            if node.left:
+                q.append((node.left, level + 1))
+            if node.right:
+                q.append((node.right, level + 1))
+
+        return level
+
+
+
+
