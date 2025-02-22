@@ -1,7 +1,5 @@
 from collections import deque
 from typing import Optional
-from unittest.mock import right
-
 
 class TreeNode:
     def __init__(self, x):
